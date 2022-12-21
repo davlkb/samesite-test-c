@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
-  <body style="display:flex; flex-direction:column">
+  <body style="display:flex; flex-direction:column: gap: 4px;">
     <main>
         <h1>SameSite Test C</h1>  
     </main>
     <a href="https://a.2do.lc/">https://a.2do.lc/</a>
     <a href="https://b.2do.lc/">https://b.2do.lc/</a>
+    
+    <img src="https://a.2do.lc/a.png" alt="A Image" style="width: 40px;"> 
+    <script type="text/javascript">
+      fetch('https://a.2do.lc/style.css')
+        .then((response) => response.text())
+        .then((data) => console.log(data));
+    </script>
   </body>
 </html>
